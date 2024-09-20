@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculdade Almeida Rodrigues</title>
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,6 +65,8 @@
             text-align: center;
             color: rgb(65, 65, 65);
             margin-top: 80px;
+            margin-left: 4px;
+            margin-right: 4px;
         }
 
         h1 {
@@ -78,11 +81,21 @@
             margin: 10px 0;
         }
 
+        .fotosAcademicos {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+
+        .campus {
+            width: 50%;
+        }
+
         footer {
             background-color: #b8ffca;
             color: rgb(65, 65, 65);
-            text-align: center;
-            padding: 4px 0;
+            padding: 2px 0;
+            padding-left: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -98,11 +111,20 @@
     </nav>
 
     <div class="boxed">
-        <h1>Welcome to Faculdade Almeida Rodrigues</h1>
-        <p>Your journey towards a brighter future starts here. Explore
-            our wide range of courses and academic programs designed to
-            empower you with the knowledge and skills you need to
-            succeed.</p>
+        <h1>Bem vindo Faculdade Almeida Rodrigues</h1>
+        <p>Sua jornada rumo a um futuro melhor começa aqui. Explore nossa ampla variedade de cursos e programas
+            acadêmicos projetados para capacitá-lo com o conhecimento e as habilidades necessárias para ter sucesso.</p>
+    </div>
+    <div class="fotosAcademicos">
+        <div class="boxed">
+            <img class="campus" src="imagens/Campus.png" alt="">
+            <p>Campus moderno e equipado para as diversas areas de ensino</p>
+        </div>
+        <div class="boxed">
+            <img class="campus" src="imagens/fit.webp" alt="">
+            <p>Instalacoes modernas desportivas</p>
+        </div>
+
     </div>
 
     <footer>
