@@ -1,57 +1,148 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Page</title>
-    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            background-image: url('imagens/bg2.jpg');
-        }
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sobre Nós</title>
+   <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           background-color: #f4f4f4;
+           background-image: url('imagens/bg2.jpg');
+       }
 
-        .menu-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
 
-        h1 {
-            color: #4CAF50;
-        }
+       .header {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           background-color: white;
+           padding: 10px 20px;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
 
-        footer {
-            background-color: #b8ffca;
-            color: rgb(65, 65, 65);
-            padding: 2px 0;
-            padding-left: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+
+       .logo {
+           height: 100px;
+       }
+
+
+       .btn-login {
+           padding: 10px 20px;
+           background-color: #4CAF50;
+           color: white;
+           text-decoration: none;
+           border-radius: 5px;
+           transition: background-color 0.3s ease;
+       }
+
+
+       .btn-login:hover {
+           background-color: #45a049;
+       }
+
+
+       .menu-container {
+           background-color: white;
+           padding: 20px;
+           border-radius: 8px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           text-align: center;
+           margin-top: 80px;
+       }
+
+
+       h1 {
+           color: #4CAF50;
+       }
+
+
+       p {
+           text-align: justify;
+           margin-bottom: 20px;
+       }
+
+
+       footer {
+           background-color: #b8ffca;
+           color: rgb(65, 65, 65);
+           padding: 2px 0;
+           padding-left: 10px;
+           position: fixed;
+           width: 100%;
+           bottom: 0;
+       }
+
+
+       .btn-home {
+           display: inline-block;
+           padding: 10px 20px;
+           margin-top: 20px;
+           background-color: #4CAF50;
+           color: white;
+           text-decoration: none;
+           border-radius: 5px;
+           transition: background-color 0.3s ease;
+       }
+
+
+       .btn-home:hover {
+           background-color: #45a049;
+       }
+   </style>
 </head>
+
 
 <body>
 
-    <div class="menu-container">
-        <h1>Ola, Seja bem vindo a FAR!</h1>
-        <p>Cursos de Graduacao por apenas $20.000,00 por semana!.</p>
-    </div>
 
-    <footer>
-        &copy; 2024 Faculdade Almeida Rodrigues. All rights reserved.
-    </footer>
+   <!-- Graças a deus existe chat gpt e eu consegui fazer pelo menos isso no almoço -->
+   <div class="header">
+       <a href="Home.html">
+           <img src="imagens/logo2.png" alt="Logo Faculdade Almeida Rodrigues" class="logo">
+       </a>
+       <a href="Login.html" class="btn-login">Log In</a>
+   </div>
+
+
+   <div class="menu-container">
+       <h1>Ola, Seja bem vindo a FAR!</h1>
+       <p>A Faculdade Almeida Rodrigues foi fundada com o compromisso de proporcionar uma educação de excelência, unindo tradição e inovação para formar profissionais preparados para os desafios do futuro. Localizada em um ambiente acadêmico de alto nível, nossa instituição oferece cursos de graduação e pós-graduação, destacando-se nas áreas de Ciências Humanas, Exatas, Biológicas e Tecnológicas.
+
+
+           Com uma equipe de docentes altamente qualificados, composta por mestres e doutores com vasta experiência acadêmica e profissional, buscamos não apenas transmitir conhecimento, mas também incentivar o pensamento crítico, a pesquisa e a formação ética de nossos estudantes. Nosso objetivo é transformar vidas por meio da educação, oferecendo uma formação sólida, que integra teoria e prática, preparando os alunos para contribuir de forma significativa com a sociedade.
+          
+           Na Faculdade Almeida Rodrigues, acreditamos que a educação é o motor para a transformação social e econômica. Por isso, estamos sempre em busca de inovações pedagógicas, aliando tecnologia de ponta a um ensino centrado no aluno. Com infraestrutura moderna e laboratórios bem equipados, proporcionamos um ambiente dinâmico e acolhedor para o desenvolvimento acadêmico e pessoal de nossos estudantes.
+          
+           Nossa missão é formar cidadãos críticos, éticos e inovadores, capazes de atuar de maneira responsável em suas áreas de atuação, contribuindo para a construção de um futuro mais justo e sustentável. Se você busca uma formação de qualidade e está comprometido com a sua carreira e com o impacto positivo na sociedade, a Faculdade Almeida Rodrigues é o lugar certo para você.
+          
+           Venha fazer parte dessa jornada de conhecimento e transformação!</p>
+      
+       <a href="Home.html" class="btn-home">Home</a>
+   </div>
+
+
+   <footer>
+       &copy; 2024 Faculdade Almeida Rodrigues. All rights reserved.
+   </footer>
 </body>
 
+
 </html>
+
+
+
+
+

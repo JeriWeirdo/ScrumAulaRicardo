@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+     <!-- Só é chad quem leu essa mensagem, parabens por fazer seu trabalho -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            background-image: url('imagens/bg.jpg');
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 50px; 
+        }
+        .logout-button {
+            background-color: white;
+            color: #4CAF50;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .portal-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .subject-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .subject-list li {
+            margin: 10px;
+            background-color: #e7f3fe;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px; 
+        }
+        .subject-list img {
+            width: 50px; 
+            height: auto;
+        }
+        .subject-list a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="imagens/logo2.png" alt="Logo da Instituição"> 
+        <div>
+            <span>Olá, [Nome do Aluno]</span>
+            <a href="home.html">
+                <button class="logout-button">Log Out</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="portal-container">
+        <h1>Bem-vindo de volta!</h1>
+        <h2>Suas disciplinas:</h2>
+        <ul class="subject-list">
+            <li>
+                <img src="imagens/logo.png" alt="Algoritmo"> 
+                <a href="#">Algoritmo e técnicas de programação</a>
+            </li>
+            <li>
+                <img src="imagens/logo.png" alt="Segurança"> 
+                <a href="#">Segurança da Informação</a>
+            </li>
+            <li>
+                <img src="imagens/logo.png" alt="Engenharia"> 
+                <a href="#">Engenharia de Software</a>
+            </li>
+            <li>
+                <img src="imagens/logo.png" alt="POO"> 
+                <a href="#">Programação Orientada a Objetos</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
