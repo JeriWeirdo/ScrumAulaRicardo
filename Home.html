@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Faculdade Almeida Rodrigues</title>
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade Almeida Rodrigues</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,13 +15,11 @@
             background-position: center;
             background-attachment: fixed;
             color: white;
-        }
-
-        header {
-            background-color: #b8ffca;
-            color: rgb(65, 65, 65);
-            padding: 20px;
-            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         nav {
@@ -41,6 +39,7 @@
             font-weight: bold;
             color: rgb(65, 65, 65);
             text-decoration: none;
+            margin-left: 20px;
         }
 
         nav .login-btn {
@@ -53,15 +52,18 @@
             margin-right: 20px;
         }
 
-        boxed {
+        .boxed {
             display: flex;
-            padding: 10px 10px 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: rgba(184, 255, 202, 0.9);
+            border-radius: 8px;
+            max-width: 800px;
             text-align: center;
-            background-color: #b8ffca;
-            border-radius: 4px;
-            border: none;
-            border-radius: 4px;
-            width: auto;
+            color: rgb(65, 65, 65);
+            margin-top: 80px; /* Adjust margin to account for fixed nav bar */
         }
 
         h1 {
@@ -71,42 +73,42 @@
 
         p {
             font-size: 18px;
-            color: #666;
-            max-width: 800px;
-            margin: 0 auto;
+            color: #333;
+            text-align: center;
+            margin: 10px 0;
         }
 
         footer {
             background-color: #b8ffca;
-            color: white;
+            color: rgb(65, 65, 65);
             text-align: center;
-            padding: 10px 0;
+            padding: 4px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
         }
-
     </style>
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <nav>
-            <a href="#" class="logo">Faculdade Almeida Rodrigues</a>
-            <button class="login-btn"
-                onclick="window.location.href='login.html'">Login</button>
-        </nav>
-        <div class="boxed">
-                <h1>Welcome to Faculdade Almeida Rodrigues</h1>
-                <p>Your journey towards a brighter future starts here. Explore
-                    our wide range of courses and academic programs designed to
-                    empower you with the knowledge and skills you need to
-                    succeed.</p>
-        </div>
-        <footer>
-            &copy; 2024 Faculdade Almeida Rodrigues. All rights reserved.
-        </footer>
+    <nav>
+        <a href="#" class="logo">Faculdade Almeida Rodrigues</a>
+        <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    </nav>
 
-    </body>
+    <div class="boxed">
+        <h1>Welcome to Faculdade Almeida Rodrigues</h1>
+        <p>Your journey towards a brighter future starts here. Explore
+            our wide range of courses and academic programs designed to
+            empower you with the knowledge and skills you need to
+            succeed.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Faculdade Almeida Rodrigues. All rights reserved.
+    </footer>
+
+</body>
 
 </html>
